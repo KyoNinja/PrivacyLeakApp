@@ -1,6 +1,10 @@
 # Changelog
 
-### Version 2.3.2 (Current)
+### Version 2.3.3 (Current)
+- 🌐 Moved language selector to the top area of About screen for faster access
+- 📜 Changelog section in About now uses a compact fixed-height panel with internal scroll
+
+### Version 2.3.2
 - 📱 Fixed Profiles header alignment on narrower devices with responsive top actions and a dedicated profile-count row
 - 📝 GitHub public releases now publish version changelog notes extracted from `README.md` instead of generic static text
 
