@@ -1,6 +1,12 @@
 # Changelog
 
-### Version 2.3.4 (Current)
+### Version 2.3.5 (Current)
+- 🧪 Added dedicated `Debug Log` area in Download screen (top-bar bug icon) with copy/share actions for support diagnostics
+- 📊 Added deep pagination diagnostics for profile/purchased/chat collection (HTTP status, per-page counts, last-page detection, summaries)
+- 🧭 Hardened profile media collection against fragile HTML count parsing to reduce partial-download scenarios
+- 🧮 Added collection counters before/after dedup and media-type filtering in download pipeline
+
+### Version 2.3.4
 - 🔧 Fixed missing `androidx-security-crypto` entry in version catalog causing unresolved build reference
 - 🗃️ Added `postDate` field to `MediaItem`, `MosaicItem`, and `PurchasedPost` models for date-based filenames
 - 🌐 Added `getTurnstileConfig()` endpoint to `PrivacyApiService` for Cloudflare Turnstile integration
