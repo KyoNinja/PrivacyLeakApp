@@ -1,6 +1,13 @@
 # Changelog
 
-### Version 2.3.3 (Current)
+### Version 2.3.4 (Current)
+- 🔧 Fixed missing `androidx-security-crypto` entry in version catalog causing unresolved build reference
+- 🗃️ Added `postDate` field to `MediaItem`, `MosaicItem`, and `PurchasedPost` models for date-based filenames
+- 🌐 Added `getTurnstileConfig()` endpoint to `PrivacyApiService` for Cloudflare Turnstile integration
+- 🔑 Added credential persistence (`savedEmail`, `savedPassword`, `saveCredentials`, `clearCredentials`) to `AuthRepository`
+- 🛡️ Changed OkHttp logging level from BODY to HEADERS to prevent OOM on large binary downloads
+
+### Version 2.3.3
 - 🌐 Moved language selector to the top area of About screen for faster access
 - 📜 Changelog section in About now uses a compact fixed-height panel with internal scroll
 
