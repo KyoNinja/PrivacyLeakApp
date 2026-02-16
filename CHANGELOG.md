@@ -1,6 +1,11 @@
 # Changelog
 
-### Version 2.3.5 (Current)
+### Version 2.3.6 (Current)
+- 👥 Fixed followed-profiles loading by adding pagination to `UserFollowing` (removes first-page-only cap)
+- 💬 Fixed chat/purchased media matching by normalizing profile identifiers (`@`, casing) and considering creator nickname
+- 🧪 Added extra diagnostics for no-match scenarios in chat/purchased collection to speed up support triage
+
+### Version 2.3.5
 - 🧪 Added dedicated `Debug Log` area in Download screen (top-bar bug icon) with copy/share actions for support diagnostics
 - 📊 Added deep pagination diagnostics for profile/purchased/chat collection (HTTP status, per-page counts, last-page detection, summaries)
 - 🧭 Hardened profile media collection against fragile HTML count parsing to reduce partial-download scenarios
