@@ -4,15 +4,27 @@ Public distribution repository for signed APK releases of Privacy Leak.
 
 The source code is maintained in a private repository. This public repository is used to publish release binaries, checksums, and changelog history.
 
+## Release Download Counter
+
+[![Latest Version](https://img.shields.io/github/v/release/KyoNinja/PrivacyLeakApp?style=for-the-badge&label=Latest%20Version)](../../releases/latest)
+[![Total Downloads](https://img.shields.io/github/downloads/KyoNinja/PrivacyLeakApp/total?style=for-the-badge&label=Total%20Downloads)](../../releases)
+[![Latest Release Downloads](https://img.shields.io/github/downloads/KyoNinja/PrivacyLeakApp/latest/total?style=for-the-badge&label=Latest%20Release%20Downloads)](../../releases/latest)
+
+Detailed chart/table tracker:
+- https://somsubhra.github.io/github-release-stats/?username=KyoNinja&repository=PrivacyLeakApp
+
 ## Features
 
 - ✅ Automatic login (email/password) with Cloudflare Turnstile
+- ✅ Turnstile preloading/refresh on login screen with retry handling for captcha/HTTP 400 failures
 - ✅ List followed profiles
-- ✅ Download photos (with URL edits stripping)
+- ✅ Download photos in highest available quality with smart fallback
+- ✅ Automatic overwrite when remote photo is larger than local existing file
 - ✅ Download videos (direct MP4 and HLS with decryption)
 - ✅ Media source selection: Profile Feed, Purchased, Chat, or All
 - ✅ Media type selection: Photos, Videos, or Both
 - ✅ Real-time progress tracking with speed, ETA, and activity log
+- ✅ Dedicated Debug Log (separate from activity log) with copy/share support for troubleshooting
 - ✅ Organized storage: Downloads/PrivacyLeak/{profile}/fotos|videos
 - ✅ Multi-language support (English and Portuguese)
 - ✅ Optional TS-to-MP4 conversion for HLS videos via FFmpegKit (stream copy, no re-encoding)
