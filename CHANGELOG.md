@@ -1,6 +1,11 @@
 # Changelog
 
-### Version 2.3.6 (Current)
+### Version 2.3.7 (Current)
+- 🖼️ Fixed image token transform to request full-resolution JPEG (`quality=100`) instead of falling back to resized/watermarked variants
+- 🔄 Improved chat/purchased pagination to continue after short pages (`items < limit`) with safe repeated-page signature stop conditions
+- 🧪 Added extra pagination diagnostics (`maybeLastPage`, `repeatedSignature`, `hardPageLimit`) to speed up troubleshooting
+
+### Version 2.3.6
 - 👥 Fixed followed-profiles loading by adding pagination to `UserFollowing` (removes first-page-only cap)
 - 💬 Fixed chat/purchased media matching by normalizing profile identifiers (`@`, casing) and considering creator nickname
 - 🧪 Added extra diagnostics for no-match scenarios in chat/purchased collection to speed up support triage
