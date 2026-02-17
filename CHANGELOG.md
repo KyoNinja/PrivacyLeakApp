@@ -2,7 +2,17 @@
 
 ### Unreleased
 
-### Version 2.3.8 (Current)
+### Version 2.5.0 (Current)
+- Fixed (download): improve transformed image quality selection
+- Added (ui): rework about screen and debug log experience
+- CI/CD (workflows): update runners to self-hosted for consistency across workflows
+- CI/CD (release): make bilingual notes generator work for workflow_dispatch tags
+
+### Version 2.4.0
+- CI/CD (release): publish bilingual EN/PT release notes
+- CI/CD (release): trigger tag and public release directly from bump workflow
+
+### Version 2.3.8
 - 🔐 Login agora pré-carrega/atualiza automaticamente o Turnstile ao abrir e ao retornar para foreground
 - ♻️ Re-login automático com retry único usando token Turnstile renovado em falhas relacionadas a captcha/HTTP 400
 - 🧪 Novo `Debug Log` na tela de Login com status de segurança, eventos de autenticação e ação de copiar
@@ -216,4 +226,3 @@
 - Basic login functionality
 - Profile listing
 - Photo and video download support
-
