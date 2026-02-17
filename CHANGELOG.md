@@ -1,6 +1,19 @@
 # Changelog
 
-### Version 2.3.7 (Current)
+### Unreleased
+
+### Version 2.3.8 (Current)
+- 🔐 Login agora pré-carrega/atualiza automaticamente o Turnstile ao abrir e ao retornar para foreground
+- ♻️ Re-login automático com retry único usando token Turnstile renovado em falhas relacionadas a captcha/HTTP 400
+- 🧪 Novo `Debug Log` na tela de Login com status de segurança, eventos de autenticação e ação de copiar
+- 📌 Botão principal da Login agora fica fixo no rodapé, junto de versão/créditos sempre visíveis
+- 🆓 Aviso explícito de app gratuito e ajuste de copy para deixar claro que o login usa conta do `privacy.com.br`
+- 🖼️ Download de imagens agora sonda qualidades em paralelo e escolhe automaticamente a maior qualidade disponível antes do fallback
+- 🔁 Arquivos de foto existentes passam por comparação de tamanho e são sobrescritos automaticamente quando o arquivo remoto é maior
+- 🚀 Delay entre fotos reduzido para acelerar lotes de imagens sem impactar o throttling atual de vídeos
+- 🧪 Log de debug de imagem ampliado com qualidade selecionada, motivo de fallback e decisão de overwrite
+
+### Version 2.3.7
 - 🖼️ Fixed image token transform to request full-resolution JPEG (`quality=100`) instead of falling back to resized/watermarked variants
 - 🔄 Improved chat/purchased pagination to continue after short pages (`items < limit`) with safe repeated-page signature stop conditions
 - 🧪 Added extra pagination diagnostics (`maybeLastPage`, `repeatedSignature`, `hardPageLimit`) to speed up troubleshooting
